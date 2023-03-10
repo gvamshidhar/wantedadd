@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(162, 83, 68);
+            animation: animate 4s linear infinite;
+            /* align-content: center; */
+        }
+        button{
+            height: 50px;
+            width: 120px;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 20%;
+            animation: animate1 4s linear infinite;
+            cursor: pointer;
+        }
+        @keyframes animate{
+            0%{
+                background-color: #ff7a00;
+            }
+            20%{
+                background-color: #E6E9EE;
+            }
+            40%{
+                background-color: #339476;
+            }
+            60%{
+                background-color: #E6E9EE;
+            }
+            80%{
+                background-color: #889c78;
+            }
+        }
+        @keyframes animate1{
+            0%{
+                color: #ff7a00;
+            }
+            20%{
+                color: black;
+            }
+            40%{
+                color: #339476;
+            }
+            60%{
+                color: black;
+            }
+            80%{
+                color: #889c78;
+            }
+        }
+        #container{
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+            display: none;
+            background-color: rgb(105, 147, 147);
+            text-align: center;
+            animation: animate 4s linear infinite;
+            /* opacity: 0.5; */
+        }
+        .sub{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub1{
+            border: 3px solid black;
+            height: 450px;
+            width: 400px;
+            border-radius: 7%;
+            background-color: white;
+            animation: animate1 4s linear infinite;
+        }
+        h1{
+            border-bottom: 3px solid black;
+            padding: 10px;
+        }
+        h2{
+            padding: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            transform: skewY(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="btn1" onclick="button()">Click Here</button>
+        <div id="container">
+            <div class="sub">
+                <div class="sub1">
+                    <h1>Wanted </h1>
+                    <h2>G.ANUSHA</h2><br><br>
+                    <h4>    she is a dog killer . She is a student in a vertanery college near the Mahidhipatnam.
+                        she is going to complete her course. So she started killing pets. those pets has been their for 
+                        treatment in the hospital. Police caught her few weeks ago in the lab.So be carefull with vertanary 
+                        doctors. Sadly she is my sister. So please forgive me.
+                        <h3>Bounty : 200RS</h3>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function button(){
+        document.getElementById("container").style.display = "block"
+        document.getElementById("btn1").style.display = "none"
+    }
+</script>
+</html>
